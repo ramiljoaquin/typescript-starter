@@ -11,11 +11,6 @@ export class PostsServiceQueries {
     @Inject(POST_MODEL_PROVIDER) private readonly postModel: Model<Post>,
   ) {}
 
-  async create(createPostModel: CreatePostModel): Promise<Post> {
-    const createdPost = new this.postModel(createPostModel);
-    return await createdPost.save();
-  }
-
   async findAll(): Promise<Post[]> {
     return await this.postModel.find().exec();
   }

@@ -15,8 +15,4 @@ export class PostsServiceCommand {
     const createdPost = new this.postModel(createPostModel);
     return await createdPost.save();
   }
-
-  async findAll(): Promise<Post[]> {
-    return await this.postModel.find().exec();
-  }
 }
