@@ -1,7 +1,7 @@
 import { Connection } from 'mongoose';
 
 import { PostSchema } from './posts.schema';
-import { POST_MODEL_PROVIDER, DB_PROVIDER } from '../constants';
+import { POST_MODEL_PROVIDER, DB_PROVIDER } from '../../constants';
 
 export const postsProviders = [
   {
