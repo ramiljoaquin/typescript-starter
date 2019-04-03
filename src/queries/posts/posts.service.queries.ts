@@ -2,7 +2,6 @@ import { Model } from 'mongoose';
 import { Injectable, Inject } from '@nestjs/common';
 
 import { Post } from '../../models/posts/interfaces/post.interface';
-import { CreatePostModel } from '../../models/posts/create-post.model';
 import { POST_MODEL_PROVIDER } from '../../constants';
 
 @Injectable()
