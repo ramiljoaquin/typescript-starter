@@ -1,7 +1,7 @@
 import { Model } from 'mongoose';
 import { Injectable, Inject } from '@nestjs/common';
 
-import { Comment } from '../../models/comments/interfaces/comment.interface';
+import { Comment } from '../../modules/comments/interfaces/comment.interface';
 import { COMMENT_MODEL_PROVIDER } from '../../constants';
 
 @Injectable()
